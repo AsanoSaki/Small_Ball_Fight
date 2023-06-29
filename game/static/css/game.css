@@ -1,0 +1,137 @@
+.ac_game_menu {
+    width: 100%;
+    height: 100%;
+    background-image: url('/static/image/menu/background.jpeg');  /* 注意不用带公网IP */
+    background-size: 100% 100%;
+    user-select: none;
+}
+
+.ac_game_menu_btgroup {
+    width: 20vw;
+    position: relative;
+    top: 30%;
+    left: 20%;
+}
+
+.ac_game_menu_btgroup_bt {
+    height: 7vh;
+    width: 15vw;
+    color: white;
+    font-size: 3vh;
+    line-height: 7vh;
+    font-style: italic;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(39, 21, 28, 0.6);
+    border-radius: 10px;
+    letter-spacing: 0.5vw;
+}
+
+.ac_game_menu_btgroup_bt:hover {
+    transform: scale(1.2);
+    transition: 100ms;
+}
+
+.ac_game_playground {
+    height: 100%;
+    width: 100%;
+    user-select: none;
+}
+
+.ac_game_settings {
+    width: 100%;
+    height: 100%;
+    background-image: url('/static/image/menu/background.jpeg');
+    background-size: 100% 100%;
+    user-select: none;
+}
+
+.ac_game_settings_login {
+    height: 32vh;
+    width: 20vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.ac_game_settings_register {
+    height: 39vh;
+    width: 20vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+}
+
+.ac_game_settings_title {
+    color: white;
+    font-size: 3.5vh;
+    text-align: center;
+    height: 7vh;
+    line-height: 7vh;
+}
+
+.ac_game_settings_username {
+    display: block;
+    height: 7vh;
+}
+
+.ac_game_settings_password {
+    display: block;
+    height: 7vh;
+}
+
+.ac_game_settings_submit {
+    display: block;
+    height: 7vh;
+}
+
+.ac_game_settings_errormessage {
+    color: red;
+    font-size: 1.5vh;
+    display: inline;
+    float: left;
+    padding-left: 1vw;
+}
+
+.ac_game_settings_option {
+    color: white;
+    font-size: 1.5vh;
+    display: inline;
+    float: right;
+    padding-right: 1vw;
+    cursor: pointer;
+}
+
+.ac_game_settings_item {
+    width: 100%;
+    height: 100%;
+}
+
+.ac_game_settings_item > input {
+    width: 90%;
+    line-height: 3vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ac_game_settings_item > button {
+    color: black;
+    width: 30%;
+    line-height: 3vh;
+    font-size: 2vh;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(199, 237, 204);
+    border-radius: 7px;
+    cursor: pointer;
+}
