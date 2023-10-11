@@ -1,7 +1,6 @@
 class Settings {
     constructor(root) {
         this.root = root;
-        this.platform = 'WEB';  // 默认为Web前端
         this.username = '';  // 初始用户信息为空
         this.avatar = '';
 
@@ -168,8 +167,6 @@ class Settings {
     }
 
     logout_on_remote() {  // 在远程服务器上登出
-        if (this.platform === 'ACAPP') return false;  // AcApp应该是直接关闭窗口退出
-
         $.ajax({
             url: 'http://localhost:8000/settings/logout/',
             type: 'GET',
@@ -198,9 +195,6 @@ class Settings {
         $.ajax({
             url: 'http://localhost:8000/settings/getinfo/',
             type: 'GET',
-            data: {
-                platform: outer.platform,
-            },
             success: function(resp) {  // 调用成功的回调函数，返回的Json字典会传给resp
                 console.log(resp);  // 控制台输出查看结果
                 if (resp.result === 'success') {

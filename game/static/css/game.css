@@ -38,6 +38,13 @@
     user-select: none;
 }
 
+.ac_game_playground > canvas {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .ac_game_settings {
     width: 100%;
     height: 100%;
